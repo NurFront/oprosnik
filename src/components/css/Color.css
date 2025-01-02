@@ -1,0 +1,9 @@
+.progressto-4 {
+    position: absolute;
+    left: 220px;
+    top: 314px;
+    width: 500px;
+    height: 5px;
+    background-color: black;
+    border-radius: 5px;
+  }

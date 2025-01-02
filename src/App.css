@@ -1,16 +1,83 @@
-.nh {
-  display: none;
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.main-img {
+  width: 600px;
+  height: 200px;
+  position: relative;
+  left: 220px;
+  top: 50px;
+  border-radius: 30px;
+}
+
+.progress {
+  position: relative;
+  left: 220px;
+  top: 110px;
+  width: 600px;
+  height: 5px;
+  background-color: gray;
+  border-radius: 5px;
+}
+
+.progress-0 {
   position: absolute;
-  left: 500px;
+  left: 220px;
+  top: 314px;
+  width: 100px;
+  height: 5px;
+  background-color: black;
+  border-radius: 5px;
+}
+
+.progressto {
+  position: absolute;
+  left: 220px;
+  top: 314px;
+  width: 200px;
+  height: 5px;
+  background-color: black;
+  border-radius: 5px;
+}
+
+.quastion {
+  position: absolute;
+  left: 260px;
+  top: 240px;
+  font-size: 30px;
+  font-family: Arial;
+  color: rgb(169, 8, 8);
 }
 
 .btn {
-  background-color: transparent;
+  background-color: #007bff;
+  color: #fff;
+  font-size: 16px;
+  font-weight: bold;
+  padding: 10px 20px;
   border: none;
-  font-size: 30px;
+  border-radius: 5px;
   cursor: pointer;
+  position: absolute;
+  left: 700px;
+  top: 550px;
+  transition: background-color 0.3s ease, transform 0.2s ease;
 }
 
-.btn:hover .nh {
-    display: block;
+.btn:hover {
+  background-color: #0056b3; /* Темнее при наведении */
+  transform: scale(1.05); /* Легкое увеличение */
+}
+
+.btn:active {
+  background-color: #004080; /* Еще темнее при клике */
+  transform: scale(0.95); /* Легкое уменьшение */
+}
+
+.btn:disabled {
+  background-color: #cccccc;
+  cursor: not-allowed;
+  color: #666;
 }
